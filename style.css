@@ -62,3 +62,49 @@
 .black {
   background-color: black;
 }
+
+.modal-cont{
+    /* Half of screen */
+    height: 50vh;
+    width: 50vw;
+    background-color: lightblue;
+    display: flex;
+    /* How to make div in center of screen */
+    /* comes out of screen now u r the controller of this div, you have option to set it anywhere */
+    position: absolute;
+    /* Method 1 to align center using calculation */
+    top:30%;
+    left: 25%;
+    /* Method 2 using calc method*/
+}
+
+.textArea-cont{
+    /* height & width from modal-cont */
+    height: 100%;
+    width: 75%;
+    background-color: #dfe4ea;
+    /* Remove outline from textarea */
+    outline: none;
+    /* Remove border */
+    border: none;
+    /* Remove expandable textarea */
+    resize: none;
+    font-size: 2rem;
+    padding: 2rem;
+    
+}
+
+.priority-colors-cont{
+    height: 100%;
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #4b4b4b;
+}
+
+.priority-color{
+    height: 3rem;
+    width: 5rem;
+}
