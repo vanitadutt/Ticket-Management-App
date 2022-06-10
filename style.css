@@ -1,0 +1,50 @@
+* {
+  /* border will get complete content area, if border is given then also content space is not compromized */
+  box-sizing: border-box;
+  /* to remove by default margin */
+  margin: 0;
+  padding: 0;
+}
+
+.toolbox-cont {
+  /* by default width takes full length */
+  height: 5rem;
+  background-color: grey;
+  display: flex;
+  align-items: center;
+}
+
+/* all children of toolbox-cont */
+.toolbox-cont > * {
+  margin-left: 4rem;
+}
+
+.toolbox-priority-cont {
+  height: 3.5rem;
+  width: 18rem;
+  background-color: yellow;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.color {
+  height: 1.5rem;
+  width: 3rem;
+}
+
+.light_pink {
+  background-color: lightpink;
+}
+
+.light_green {
+  background-color: lightgreen;
+}
+
+.light_blue {
+  background-color: lightblue;
+}
+
+.black {
+  background-color: black;
+}
