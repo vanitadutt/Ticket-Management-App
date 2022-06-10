@@ -9,7 +9,7 @@
 .toolbox-cont {
   /* by default width takes full length */
   height: 5rem;
-  background-color: grey;
+  background-color: #4b4b4b;
   display: flex;
   align-items: center;
 }
@@ -22,12 +22,26 @@
 .toolbox-priority-cont {
   height: 3.5rem;
   width: 18rem;
-  background-color: yellow;
+  background-color:#3d3d3d;
   display: flex;
   align-items: center;
   justify-content: space-evenly;
 }
-
+.action-btn-cont{
+    height: 3.5rem;
+    width: 8rem;
+    background-color: #3d3d3d;
+    display: flex;
+}
+.action-btn-cont>*{
+    display: flex;
+    justify-content: center;
+    /* each will take 50% width */
+    width: 50%;
+    font-size: 2rem;
+    align-items: center;
+    color: white;
+}
 .color {
   height: 1.5rem;
   width: 3rem;
