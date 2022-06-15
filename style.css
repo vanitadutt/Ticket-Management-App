@@ -22,25 +22,25 @@
 .toolbox-priority-cont {
   height: 3.5rem;
   width: 18rem;
-  background-color:#3d3d3d;
+  background-color: #3d3d3d;
   display: flex;
   align-items: center;
   justify-content: space-evenly;
 }
-.action-btn-cont{
-    height: 3.5rem;
-    width: 8rem;
-    background-color: #3d3d3d;
-    display: flex;
+.action-btn-cont {
+  height: 3.5rem;
+  width: 8rem;
+  background-color: #3d3d3d;
+  display: flex;
 }
-.action-btn-cont>*{
-    display: flex;
-    justify-content: center;
-    /* each will take 50% width */
-    width: 50%;
-    font-size: 2rem;
-    align-items: center;
-    color: white;
+.action-btn-cont > * {
+  display: flex;
+  justify-content: center;
+  /* each will take 50% width */
+  width: 50%;
+  font-size: 2rem;
+  align-items: center;
+  color: white;
 }
 .color {
   height: 1.5rem;
@@ -63,93 +63,91 @@
   background-color: black;
 }
 
-.modal-cont{
-    /* Half of screen */
-    height: 50vh;
-    width: 50vw;
-    background-color: lightblue;
-    display: none;
-    /* How to make div in center of screen */
-    /* comes out of screen now u r the controller of this div, you have option to set it anywhere */
-    position: absolute;
-    /* Method 1 to align center using calculation */
-    top:30%;
-    left: 25%;
-    /* Method 2 using calc method*/
+.modal-cont {
+  /* Half of screen */
+  height: 50vh;
+  width: 50vw;
+  background-color: lightblue;
+  display: none;
+  /* How to make div in center of screen */
+  /* comes out of screen now u r the controller of this div, you have option to set it anywhere */
+  position: absolute;
+  /* Method 1 to align center using calculation */
+  top: 30%;
+  left: 25%;
+  /* Method 2 using calc method*/
 }
 
-.textArea-cont{
-    /* height & width from modal-cont */
-    height: 100%;
-    width: 75%;
-    background-color: #dfe4ea;
-    /* Remove outline from textarea */
-    outline: none;
-    /* Remove border */
-    border: none;
-    /* Remove expandable textarea */
-    resize: none;
-    font-size: 2rem;
-    padding: 2rem;
-    
+.textArea-cont {
+  /* height & width from modal-cont */
+  height: 100%;
+  width: 75%;
+  background-color: #dfe4ea;
+  /* Remove outline from textarea */
+  outline: none;
+  /* Remove border */
+  border: none;
+  /* Remove expandable textarea */
+  resize: none;
+  font-size: 2rem;
+  padding: 2rem;
 }
 
-.priority-colors-cont{
-    height: 100%;
-    width: 25%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-around;
-    background-color: #4b4b4b;
+.priority-colors-cont {
+  height: 100%;
+  width: 25%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  background-color: #4b4b4b;
 }
 
-.priority-color{
-    height: 3rem;
-    width: 5rem;
+.priority-color {
+  height: 3rem;
+  width: 5rem;
 }
 
-.main-cont{
-   display: flex;
-   /* to give space between 2 elements */
-   gap: 2rem; 
-   justify-content: center;
-   padding: 2rem;
-   /* doesn't compromise for space */
-   flex-wrap: wrap; 
+.main-cont {
+  display: flex;
+  /* to give space between 2 elements */
+  gap: 2rem;
+  justify-content: center;
+  padding: 2rem;
+  /* doesn't compromise for space */
+  flex-wrap: wrap;
 }
 
-.ticket-cont{
+.ticket-cont {
   height: 12rem;
   width: 15rem;
   background-color: coral;
 }
 
-.ticket-color{
+.ticket-color {
   height: 1rem;
-  background-color:black;
+  background-color: black;
 }
 
-.ticket-id{
+.ticket-id {
   background-color: yellow;
   height: 2rem;
 }
-.ticket-lock{
+.ticket-lock {
   display: flex;
   font-size: 1.5rem;
   justify-content: flex-end;
   margin-top: 90px;
   margin-right: 5px;
-
 }
 
-.add-btn:hover{
-  background-color:#4bb543 ;
+.add-btn:hover {
+  background-color: #4bb543;
 }
-.remove-btn:hover{
+.remove-btn:hover {
   background-color: #f70b1a;
 }
 
-.toolbox-priority-cont>*:hover{
+.toolbox-priority-cont > *:hover {
   background-color: #485460;
 }
