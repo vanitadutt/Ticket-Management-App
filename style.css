@@ -68,7 +68,7 @@
     height: 50vh;
     width: 50vw;
     background-color: lightblue;
-    display: flex;
+    display: none;
     /* How to make div in center of screen */
     /* comes out of screen now u r the controller of this div, you have option to set it anywhere */
     position: absolute;
@@ -107,4 +107,49 @@
 .priority-color{
     height: 3rem;
     width: 5rem;
+}
+
+.main-cont{
+   display: flex;
+   /* to give space between 2 elements */
+   gap: 2rem; 
+   justify-content: center;
+   padding: 2rem;
+   /* doesn't compromise for space */
+   flex-wrap: wrap; 
+}
+
+.ticket-cont{
+  height: 12rem;
+  width: 15rem;
+  background-color: coral;
+}
+
+.ticket-color{
+  height: 1rem;
+  background-color:black;
+}
+
+.ticket-id{
+  background-color: yellow;
+  height: 2rem;
+}
+.ticket-lock{
+  display: flex;
+  font-size: 1.5rem;
+  justify-content: flex-end;
+  margin-top: 90px;
+  margin-right: 5px;
+
+}
+
+.add-btn:hover{
+  background-color:#4bb543 ;
+}
+.remove-btn:hover{
+  background-color: #f70b1a;
+}
+
+.toolbox-priority-cont>*:hover{
+  background-color: #485460;
 }
