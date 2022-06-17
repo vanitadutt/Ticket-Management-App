@@ -5,6 +5,8 @@ let taskArea = document.querySelector(".textArea-cont");
 let removeBtn = document.querySelector(".remove-btn");
 let allPriorityColors = document.querySelectorAll(".priority-color");
 
+let allToolboxPriorityColors = document.querySelectorAll('.color');
+
 let colors = ["lightpink", "lightgreen", "lightblue", "black"];
 let modalPriorityColor = colors[colors.length-1];
 let addFlag = false;
@@ -60,7 +62,8 @@ function createTicket(ticketTask,ticketColor) {
   
   mainCont.append(ticketCont);
   handleRemoval(ticketCont);
-  handleLock(ticketCont)
+  handleLock(ticketCont);
+  handleColor(ticketCont);
 }
 
 removeBtn.addEventListener("click", function () {
@@ -104,5 +107,30 @@ function handleLock(ticket){
 
 }
 
-//
+//Change Color
+function handleColor(ticket){
+  let ticketColorBand = ticket.querySelector('.ticket-color')
+
+
+  ticketColorBand.addEventListener('click',function(){
+      let currentTicketColor = ticketColorBand.classList[1];
+      let currentColorIdx = colors.findIndex(function(color){
+        return currentTicketColor === color;
+      })
+      currentColorIdx++;
+
+      let newTicketColorIdx = currentColorIdx % colors.length;
+      let newTicketColor = colors[newTicketColorIdx];
+
+      ticketColorBand.classList.remove(currentTicketColor);
+      ticketColorBand.classList.add(newTicketColor);
+
+  })
+}
+// allToolboxPriorityColors.forEach(function (colorElem) {
+//     colorElem.addEventListener('click',function(e){
+//       toolboxPriorityColor = colorElem.classList[0];
+//       console.log(toolboxPriorityColor);
+//     })
+// })
 
